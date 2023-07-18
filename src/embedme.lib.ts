@@ -78,6 +78,7 @@ enum SupportedFileType {
   ARDUINO = 'ino',
   JSX = 'jsx',
   TSX = 'tsx',
+  BICEP = 'bicep',
 }
 
 enum CommentFamily {
@@ -119,6 +120,7 @@ const languageMap: Record<CommentFamily, SupportedFileType[]> = {
     SupportedFileType.ARDUINO,
     SupportedFileType.JSX,
     SupportedFileType.TSX,
+    SupportedFileType.BICEP,
   ],
   [CommentFamily.XML]: [SupportedFileType.HTML, SupportedFileType.MARKDOWN, SupportedFileType.XML],
   [CommentFamily.HASH]: [

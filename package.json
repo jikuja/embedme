@@ -9,6 +9,7 @@
   "bin": "./dist/embedme.js",
   "scripts": {
     "build": "tsc",
+    "prepare: "yarn run build",
     "write-help-output": "echo \"$ embedme --help\" > readme/help-output.txt && node dist/embedme.js --help >> readme/help-output.txt",
     "start": "node dist/embedme.js README.md",
     "test": "ava test/test.ts",
